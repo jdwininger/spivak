@@ -1,0 +1,809 @@
+src/actionhandler.h:126:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/songqueue.h:61:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/backgroundvideo.h:49:13: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    private slots:
+            ^
+src/karaokepainter.h:30:9: style: Class 'KaraokePainter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        KaraokePainter( QImage * img );
+        ^
+src/background.h:57:18: style: The destructor '~BackgroundNone' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual ~BackgroundNone() { }
+                 ^
+src/background.h:31:18: note: Virtual destructor in base class
+        virtual ~Background();
+                 ^
+src/background.h:57:18: note: Destructor in derived class
+        virtual ~BackgroundNone() { }
+                 ^
+src/background.h:62:17: style: The function 'initFromSettings' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool    initFromSettings() { return true; }
+                ^
+src/background.h:39:25: note: Virtual function in base class
+        virtual bool    initFromSettings() = 0;
+                        ^
+src/background.h:62:17: note: Function in derived class
+        bool    initFromSettings() { return true; }
+                ^
+src/background.h:63:17: style: The function 'initFromFile' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool    initFromFile( QIODevice *, const QString& )  { return false; }
+                ^
+src/background.h:40:25: note: Virtual function in base class
+        virtual bool    initFromFile( QIODevice * file, const QString& filename ) = 0;
+                        ^
+src/background.h:63:17: note: Function in derived class
+        bool    initFromFile( QIODevice *, const QString& )  { return false; }
+                ^
+src/background.h:67:17: style: The function 'draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        qint64  draw( KaraokePainter& )  { return -1; }
+                ^
+src/background.h:44:25: note: Virtual function in base class
+        virtual qint64  draw( KaraokePainter& p ) = 0;
+                        ^
+src/background.h:67:17: note: Function in derived class
+        qint64  draw( KaraokePainter& )  { return -1; }
+                ^
+src/backgroundcolor.h:34:25: style: The function 'initFromSettings' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual bool    initFromSettings();
+                        ^
+src/background.h:39:25: note: Virtual function in base class
+        virtual bool    initFromSettings() = 0;
+                        ^
+src/backgroundcolor.h:34:25: note: Function in derived class
+        virtual bool    initFromSettings();
+                        ^
+src/backgroundcolor.h:35:25: style: The function 'initFromFile' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual bool    initFromFile( QIODevice * file, const QString& filename );
+                        ^
+src/background.h:40:25: note: Virtual function in base class
+        virtual bool    initFromFile( QIODevice * file, const QString& filename ) = 0;
+                        ^
+src/backgroundcolor.h:35:25: note: Function in derived class
+        virtual bool    initFromFile( QIODevice * file, const QString& filename );
+                        ^
+src/backgroundcolor.h:39:18: style: The function 'draw' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        qint64   draw( KaraokePainter& p );
+                 ^
+src/background.h:44:25: note: Virtual function in base class
+        virtual qint64  draw( KaraokePainter& p ) = 0;
+                        ^
+src/backgroundcolor.h:39:18: note: Function in derived class
+        qint64   draw( KaraokePainter& p );
+                 ^
+src/collectionentry.cpp:12:5: performance: Variable 'lastScanned' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    lastScanned = -1;
+    ^
+src/collectionentry.cpp:47:51: style: inconclusive: Function 'fromJson' argument 1 names different: declaration 'json' definition 'data'. [funcArgNamesDifferent]
+void CollectionEntry::fromJson(const QJsonObject &data)
+                                                  ^
+src/collectionentry.h:54:51: note: Function 'fromJson' argument 1 names different: declaration 'json' definition 'data'.
+        void        fromJson( const QJsonObject & json );
+                                                  ^
+src/collectionentry.cpp:47:51: note: Function 'fromJson' argument 1 names different: declaration 'json' definition 'data'.
+void CollectionEntry::fromJson(const QJsonObject &data)
+                                                  ^
+src/collectionproviderhttp.h:33:13: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    private slots:
+            ^
+src/collectionproviderfs.h:14:25: style: The function 'isLocalProvider' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual bool    isLocalProvider() const;
+                        ^
+src/collectionprovider.h:33:25: note: Virtual function in base class
+        virtual bool    isLocalProvider() const = 0;
+                        ^
+src/collectionproviderfs.h:14:25: note: Function in derived class
+        virtual bool    isLocalProvider() const;
+                        ^
+src/collectionproviderfs.h:17:22: style: The function 'type' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual Type type() const;
+                     ^
+src/collectionprovider.h:36:22: note: Virtual function in base class
+        virtual Type type() const = 0;
+                     ^
+src/collectionproviderfs.h:17:22: note: Function in derived class
+        virtual Type type() const;
+                     ^
+src/collectionproviderfs.h:23:22: style: The function 'retrieveMultiple' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual void retrieveMultiple( int id, const QList<QString>& urls, QList<QIODevice *> files );
+                     ^
+src/collectionprovider.h:59:22: note: Virtual function in base class
+        virtual void retrieveMultiple( int id, const QList<QString>& urls, QList<QIODevice *> files ) = 0;
+                     ^
+src/collectionproviderfs.h:23:22: note: Function in derived class
+        virtual void retrieveMultiple( int id, const QList<QString>& urls, QList<QIODevice *> files );
+                     ^
+src/colorbutton.h:40:10: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+ private slots:
+         ^
+src/database_songinfo.cpp:25:5: performance: Variable 'lastPlayed' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    lastPlayed = 0;
+    ^
+src/database_songinfo.cpp:27:5: performance: Variable 'added' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    added = 0;
+    ^
+src/database_songinfo.cpp:30:5: performance: Variable 'flags' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    flags = 0;
+    ^
+src/database_statement.cpp:68:31: style: C-style pointer casting [cstyleCast]
+    return QString::fromUtf8( (const char*) sqlite3_column_text( stmt, column ), sqlite3_column_bytes( stmt, column ) );
+                              ^
+src/karaokepainter.cpp:36:5: performance: Variable 'm_rect' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_rect = img->rect();
+    ^
+src/karaokepainter.cpp:68:60: style: inconclusive: Function 'largestFontSize' argument 2 names different: declaration 'maxfontsize' definition 'maxsize'. [funcArgNamesDifferent]
+int KaraokePainter::largestFontSize(const QFont &font, int maxsize, int width, const QString &textline, int maxheight )
+                                                           ^
+src/karaokepainter.h:49:63: note: Function 'largestFontSize' argument 2 names different: declaration 'maxfontsize' definition 'maxsize'.
+        static int     largestFontSize(const QFont& font, int maxfontsize, int width, const QString& textline, int maxheight = -1 );
+                                                              ^
+src/karaokepainter.cpp:68:60: note: Function 'largestFontSize' argument 2 names different: declaration 'maxfontsize' definition 'maxsize'.
+int KaraokePainter::largestFontSize(const QFont &font, int maxsize, int width, const QString &textline, int maxheight )
+                                                           ^
+src/karaokepainter.cpp:79:15: style: Local variable 'size' shadows outer function [shadowFunction]
+        QSize size = QFontMetrics( testfont ).size( Qt::TextSingleLine, textline );
+              ^
+src/karaokepainter.h:33:17: note: Shadowed declaration
+        QSize   size() const { return m_rect.size(); }
+                ^
+src/karaokepainter.cpp:79:15: note: Shadow variable
+        QSize size = QFontMetrics( testfont ).size( Qt::TextSingleLine, textline );
+              ^
+src/karaokeplayable.cpp:33:5: performance: Variable 'm_baseFile' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_baseFile = baseFile;
+    ^
+src/karaokeplayable_file.h:32:21: style: The function 'init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        init();
+                    ^
+src/karaokeplayable.h:93:23: note: Virtual function in base class
+        virtual bool  init() = 0;
+                      ^
+src/karaokeplayable_file.h:32:21: note: Function in derived class
+        bool        init();
+                    ^
+src/karaokeplayable_file.h:35:21: style: The function 'isCompound' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable.h:58:29: note: Virtual function in base class
+        virtual bool        isCompound() const = 0;
+                            ^
+src/karaokeplayable_file.h:35:21: note: Function in derived class
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable_file.h:39:21: style: The function 'enumerate' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QStringList enumerate();
+                    ^
+src/karaokeplayable.h:68:29: note: Virtual function in base class
+        virtual QStringList enumerate() = 0;
+                            ^
+src/karaokeplayable_file.h:39:21: note: Function in derived class
+        QStringList enumerate();
+                    ^
+src/karaokeplayable_file.h:44:21: style: The function 'absolutePath' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QString     absolutePath( const QString& object );
+                    ^
+src/karaokeplayable.h:64:29: note: Virtual function in base class
+        virtual QString     absolutePath( const QString& object ) = 0;
+                            ^
+src/karaokeplayable_file.h:44:21: note: Function in derived class
+        QString     absolutePath( const QString& object );
+                    ^
+src/karaokeplayable_file.h:48:14: style: The function 'extract' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool extract( const QString& object,  QIODevice *out );
+             ^
+src/karaokeplayable.h:73:29: note: Virtual function in base class
+        virtual bool        extract( const QString& object,  QIODevice *out ) = 0;
+                            ^
+src/karaokeplayable_file.h:48:14: note: Function in derived class
+        bool extract( const QString& object,  QIODevice *out );
+             ^
+src/karaokeplayable_zip.h:34:10: style: The destructor '~KaraokePlayable_ZIP' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+        ~KaraokePlayable_ZIP();
+         ^
+src/karaokeplayable.h:35:18: note: Virtual destructor in base class
+        virtual ~KaraokePlayable();
+                 ^
+src/karaokeplayable_zip.h:34:10: note: Destructor in derived class
+        ~KaraokePlayable_ZIP();
+         ^
+src/karaokeplayable_zip.h:37:21: style: The function 'init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        init();
+                    ^
+src/karaokeplayable.h:93:23: note: Virtual function in base class
+        virtual bool  init() = 0;
+                      ^
+src/karaokeplayable_zip.h:37:21: note: Function in derived class
+        bool        init();
+                    ^
+src/karaokeplayable_zip.h:40:21: style: The function 'isCompound' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable.h:58:29: note: Virtual function in base class
+        virtual bool        isCompound() const = 0;
+                            ^
+src/karaokeplayable_zip.h:40:21: note: Function in derived class
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable_zip.h:44:21: style: The function 'enumerate' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QStringList enumerate();
+                    ^
+src/karaokeplayable.h:68:29: note: Virtual function in base class
+        virtual QStringList enumerate() = 0;
+                            ^
+src/karaokeplayable_zip.h:44:21: note: Function in derived class
+        QStringList enumerate();
+                    ^
+src/karaokeplayable_zip.h:49:21: style: The function 'absolutePath' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QString     absolutePath(const QString&);
+                    ^
+src/karaokeplayable.h:64:29: note: Virtual function in base class
+        virtual QString     absolutePath( const QString& object ) = 0;
+                            ^
+src/karaokeplayable_zip.h:49:21: note: Function in derived class
+        QString     absolutePath(const QString&);
+                    ^
+src/karaokeplayable_zip.h:53:21: style: The function 'extract' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        extract( const QString& object,  QIODevice *out );
+                    ^
+src/karaokeplayable.h:73:29: note: Virtual function in base class
+        virtual bool        extract( const QString& object,  QIODevice *out ) = 0;
+                            ^
+src/karaokeplayable_zip.h:53:21: note: Function in derived class
+        bool        extract( const QString& object,  QIODevice *out );
+                    ^
+src/karaokeplayable_kfn.h:36:21: style: The function 'init' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        init();
+                    ^
+src/karaokeplayable.h:93:23: note: Virtual function in base class
+        virtual bool  init() = 0;
+                      ^
+src/karaokeplayable_kfn.h:36:21: note: Function in derived class
+        bool        init();
+                    ^
+src/karaokeplayable_kfn.h:39:21: style: The function 'isCompound' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable.h:58:29: note: Virtual function in base class
+        virtual bool        isCompound() const = 0;
+                            ^
+src/karaokeplayable_kfn.h:39:21: note: Function in derived class
+        bool        isCompound() const;
+                    ^
+src/karaokeplayable_kfn.h:43:21: style: The function 'enumerate' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QStringList enumerate();
+                    ^
+src/karaokeplayable.h:68:29: note: Virtual function in base class
+        virtual QStringList enumerate() = 0;
+                            ^
+src/karaokeplayable_kfn.h:43:21: note: Function in derived class
+        QStringList enumerate();
+                    ^
+src/karaokeplayable_kfn.h:48:21: style: The function 'absolutePath' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        QString     absolutePath(const QString&);
+                    ^
+src/karaokeplayable.h:64:29: note: Virtual function in base class
+        virtual QString     absolutePath( const QString& object ) = 0;
+                            ^
+src/karaokeplayable_kfn.h:48:21: note: Function in derived class
+        QString     absolutePath(const QString&);
+                    ^
+src/karaokeplayable_kfn.h:52:21: style: The function 'extract' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool        extract( const QString& object,  QIODevice *out );
+                    ^
+src/karaokeplayable.h:73:29: note: Virtual function in base class
+        virtual bool        extract( const QString& object,  QIODevice *out ) = 0;
+                            ^
+src/karaokeplayable_kfn.h:52:21: note: Function in derived class
+        bool        extract( const QString& object,  QIODevice *out );
+                    ^
+src/karaokeplayable_kfn.cpp:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/karaokeplayable_kfn.cpp:28:22: warning: Member variable 'KaraokePlayable_KFN::m_aesKey' is not initialized in the constructor. [uninitMemberVar]
+KaraokePlayable_KFN::KaraokePlayable_KFN(const QString &basename, QStringDecoder *filenameDecoder)
+                     ^
+src/karaokeplayable_kfn.cpp:69:5: style: Exception should be caught by reference. [catchExceptionByValue]
+    catch ( QString ex )
+    ^
+src/aes.h:322:33: style: C-style pointer casting [cstyleCast]
+    volatile unsigned char *p = (unsigned char*) v; while( n-- ) *p++ = 0;
+                                ^
+src/karaokeplayable_kfn.cpp:268:38: style: C-style pointer casting [cstyleCast]
+    mbedtls_aes_setkey_dec( &aesctx, (unsigned char*)  m_aesKey, 128 );
+                                     ^
+src/karaokeplayable_kfn.cpp:292:36: style: C-style pointer casting [cstyleCast]
+                                   (unsigned char*) buffer + i,
+                                   ^
+src/karaokeplayable_kfn.cpp:293:36: style: C-style pointer casting [cstyleCast]
+                                   (unsigned char*) outbuf + i );
+                                   ^
+src/karaokeplayable_kfn.cpp:311:23: style: C-style pointer casting [cstyleCast]
+    if ( m_file.read( (char*) &byte, 1) != 1 )
+                      ^
+src/aes.h:654:18: style: The scope of the variable 'z' can be reduced. [variableScope]
+    int i, x, y, z;
+                 ^
+src/aes.h:979:15: style: Variable 'RK' can be declared as pointer to const [constVariablePointer]
+    uint32_t *RK, X0, X1, X2, X3, Y0, Y1, Y2, Y3;
+              ^
+src/aes.h:1036:15: style: Variable 'RK' can be declared as pointer to const [constVariablePointer]
+    uint32_t *RK, X0, X1, X2, X3, Y0, Y1, Y2, Y3;
+              ^
+src/karaokeplayable_kfn.cpp:263:33: style: Variable 'total_out' is assigned a value that is never used. [unreadVariable]
+    int total_in = 0, total_out = 0;
+                                ^
+src/karaokeplayable_kfn.cpp:299:19: style: Variable 'total_out' is assigned a value that is never used. [unreadVariable]
+        total_out += toWrite;
+                  ^
+src/labelshowhelp.h:33:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/languagedetector.cpp:242:31: performance: inconclusive: Technically the member function 'LanguageDetector::languages' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+QStringList LanguageDetector::languages()
+                              ^
+src/languagedetector.h:37:22: note: Technically the member function 'LanguageDetector::languages' can be static (but you may consider moving to unnamed namespace).
+        QStringList  languages();
+                     ^
+src/languagedetector.cpp:242:31: note: Technically the member function 'LanguageDetector::languages' can be static (but you may consider moving to unnamed namespace).
+QStringList LanguageDetector::languages()
+                              ^
+src/mainwindow.h:47:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/mediaplayer.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+src/mediaplayerinitializer.h:27:13: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    private slots:
+            ^
+src/mediaplayer.cpp:33:14: warning: Member variable 'MediaPlayer::m_loadOptions' is not initialized in the constructor. [uninitMemberVar]
+MediaPlayer::MediaPlayer( QObject * parent )
+             ^
+src/mediaplayer.cpp:33:14: warning: Member variable 'MediaPlayer::m_mediaLoading' is not initialized in the constructor. [uninitMemberVar]
+MediaPlayer::MediaPlayer( QObject * parent )
+             ^
+src/mediaplayer.cpp:41:5: performance: Variable 'm_duration' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_duration = -1;
+    ^
+src/mediaplayer.cpp:43:5: performance: Variable 'm_playState' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_playState = StateReset;
+    ^
+src/mediaplayer.h:37:9: style: Class 'MediaPlayer' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        MediaPlayer( QObject * parent = 0 );
+        ^
+src/mediaplayer.cpp:456:50: style: C-style pointer casting [cstyleCast]
+        totalread = self->m_mediaIODevice->read( (char*) map.data, length );
+                                                 ^
+src/messageboxautoclose.h:17:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/mediaplayer.cpp:199:36: style: inconclusive: Function 'adjustPitch' argument 1 names different: declaration 'value' definition 'newvalue'. [funcArgNamesDifferent]
+bool MediaPlayer::adjustPitch( int newvalue )
+                                   ^
+src/mediaplayer.h:140:33: note: Function 'adjustPitch' argument 1 names different: declaration 'value' definition 'newvalue'.
+        bool    adjustPitch(int value);
+                                ^
+src/mediaplayer.cpp:199:36: note: Function 'adjustPitch' argument 1 names different: declaration 'value' definition 'newvalue'.
+bool MediaPlayer::adjustPitch( int newvalue )
+                                   ^
+src/mediaplayer.cpp:502:80: style: inconclusive: Function 'cb_busMessageDispatcher' argument 2 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+GstBusSyncReply MediaPlayer::cb_busMessageDispatcher( GstBus *bus, GstMessage *msg, gpointer user_data )
+                                                                               ^
+src/mediaplayer.h:153:82: note: Function 'cb_busMessageDispatcher' argument 2 names different: declaration 'message' definition 'msg'.
+        static GstBusSyncReply cb_busMessageDispatcher( GstBus *bus, GstMessage *message, gpointer userData );
+                                                                                 ^
+src/mediaplayer.cpp:502:80: note: Function 'cb_busMessageDispatcher' argument 2 names different: declaration 'message' definition 'msg'.
+GstBusSyncReply MediaPlayer::cb_busMessageDispatcher( GstBus *bus, GstMessage *msg, gpointer user_data )
+                                                                               ^
+src/mediaplayer.cpp:502:94: style: inconclusive: Function 'cb_busMessageDispatcher' argument 3 names different: declaration 'userData' definition 'user_data'. [funcArgNamesDifferent]
+GstBusSyncReply MediaPlayer::cb_busMessageDispatcher( GstBus *bus, GstMessage *msg, gpointer user_data )
+                                                                                             ^
+src/mediaplayer.h:153:100: note: Function 'cb_busMessageDispatcher' argument 3 names different: declaration 'userData' definition 'user_data'.
+        static GstBusSyncReply cb_busMessageDispatcher( GstBus *bus, GstMessage *message, gpointer userData );
+                                                                                                   ^
+src/mediaplayer.cpp:502:94: note: Function 'cb_busMessageDispatcher' argument 3 names different: declaration 'userData' definition 'user_data'.
+GstBusSyncReply MediaPlayer::cb_busMessageDispatcher( GstBus *bus, GstMessage *msg, gpointer user_data )
+                                                                                             ^
+src/mediaplayer.cpp:621:56: style: inconclusive: Function 'addlog' argument 2 names different: declaration 'str' definition 'fmt'. [funcArgNamesDifferent]
+void MediaPlayer::addlog(const char *type, const char *fmt, ... )
+                                                       ^
+src/mediaplayer.h:138:56: note: Function 'addlog' argument 2 names different: declaration 'str' definition 'fmt'.
+        void    addlog( const char *type, const char * str, ... );
+                                                       ^
+src/mediaplayer.cpp:621:56: note: Function 'addlog' argument 2 names different: declaration 'str' definition 'fmt'.
+void MediaPlayer::addlog(const char *type, const char *fmt, ... )
+                                                       ^
+src/mediaplayer.cpp:81:14: style: Local variable 'state' shadows outer function [shadowFunction]
+    GstState state = GST_STATE(m_gst_pipeline);
+             ^
+src/mediaplayer.h:106:25: note: Shadowed declaration
+        virtual State   state() const;
+                        ^
+src/mediaplayer.cpp:81:14: note: Shadow variable
+    GstState state = GST_STATE(m_gst_pipeline);
+             ^
+src/mediaplayer.cpp:307:14: style: Local variable 'error' shadows outer function [shadowFunction]
+    GError * error = 0;
+             ^
+src/mediaplayer.h:74:17: note: Shadowed declaration
+        void    error( QString text );
+                ^
+src/mediaplayer.cpp:307:14: note: Shadow variable
+    GError * error = 0;
+             ^
+src/mediaplayer.cpp:546:22: style: Local variable 'old_state' shadows outer variable [shadowVariable]
+            GstState old_state, new_state, pending_state;
+                     ^
+src/mediaplayer.cpp:539:18: note: Shadowed declaration
+        GstState old_state, new_state, pending_state;
+                 ^
+src/mediaplayer.cpp:546:22: note: Shadow variable
+            GstState old_state, new_state, pending_state;
+                     ^
+src/mediaplayer.cpp:546:33: style: Local variable 'new_state' shadows outer variable [shadowVariable]
+            GstState old_state, new_state, pending_state;
+                                ^
+src/mediaplayer.cpp:539:29: note: Shadowed declaration
+        GstState old_state, new_state, pending_state;
+                            ^
+src/mediaplayer.cpp:546:33: note: Shadow variable
+            GstState old_state, new_state, pending_state;
+                                ^
+src/mediaplayer.cpp:546:44: style: Local variable 'pending_state' shadows outer variable [shadowVariable]
+            GstState old_state, new_state, pending_state;
+                                           ^
+src/mediaplayer.cpp:539:40: note: Shadowed declaration
+        GstState old_state, new_state, pending_state;
+                                       ^
+src/mediaplayer.cpp:546:44: note: Shadow variable
+            GstState old_state, new_state, pending_state;
+                                           ^
+src/mediaplayer.cpp:630:10: style: Local variable 'logging' shadows outer function [shadowFunction]
+    emit logging( type, buf );
+         ^
+src/mediaplayer.h:83:17: note: Shadowed declaration
+        void    logging( const QString& facility, const QString& message );
+                ^
+src/mediaplayer.cpp:630:10: note: Shadow variable
+    emit logging( type, buf );
+         ^
+src/midistripper.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+src/midistripper.cpp:122:20: performance: inconclusive: Technically the member function 'MIDIStripper::storeBEdword' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+void MIDIStripper::storeBEdword(char *addr, quint32 value)
+                   ^
+src/midistripper.h:47:25: note: Technically the member function 'MIDIStripper::storeBEdword' can be static (but you may consider moving to unnamed namespace).
+        void            storeBEdword( char * addr, quint32 value );
+                        ^
+src/midistripper.cpp:122:20: note: Technically the member function 'MIDIStripper::storeBEdword' can be static (but you may consider moving to unnamed namespace).
+void MIDIStripper::storeBEdword(char *addr, quint32 value)
+                   ^
+src/midistripper.cpp:50:24: style: C-style pointer casting [cstyleCast]
+    if ( m_input.read( (char*) &byte, 1 ) != 1 )
+                       ^
+src/midistripper.cpp:124:25: style: C-style pointer casting [cstyleCast]
+    unsigned char * p = (unsigned char *) addr;
+                        ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_easFileIO' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_audioAvailable' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_audioEnded' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_mixBufferSize' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_currentPosition' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:53:16: warning: Member variable 'MIDISyntheser::m_totalSize' is not initialized in the constructor. [uninitMemberVar]
+MIDISyntheser::MIDISyntheser(QObject *parent)
+               ^
+src/midisyntheser.cpp:209:23: performance: inconclusive: Either there is a missing 'override', or the member function 'MIDISyntheser::writeData' can be static. [functionStatic]
+qint64 MIDISyntheser::writeData(const char *, qint64)
+                      ^
+src/midisyntheser.h:48:16: note: Either there is a missing 'override', or the member function 'MIDISyntheser::writeData' can be static.
+        qint64 writeData(const char *, qint64 );
+               ^
+src/midisyntheser.cpp:209:23: note: Either there is a missing 'override', or the member function 'MIDISyntheser::writeData' can be static.
+qint64 MIDISyntheser::writeData(const char *, qint64)
+                      ^
+src/midisyntheser.h:32:9: style: Class 'MIDISyntheser' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        MIDISyntheser( QObject * parent = 0 );
+        ^
+src/midisyntheser.cpp:25:28: style: C-style pointer casting [cstyleCast]
+    MIDISyntheser * self = (MIDISyntheser *) handle;
+                           ^
+src/midisyntheser.cpp:38:28: style: C-style pointer casting [cstyleCast]
+    MIDISyntheser * self = (MIDISyntheser *) handle;
+                           ^
+src/midisyntheser.cpp:45:25: style: C-style pointer casting [cstyleCast]
+    unsigned char * p = (unsigned char*) ptr;
+                        ^
+src/midisyntheser.cpp:226:36: style: C-style pointer casting [cstyleCast]
+        if ( EAS_Render(m_easData, (EAS_PCM*) (m_audioBuffer.data() + m_audioAvailable), m_mixBufferSize, &count) != EAS_SUCCESS )
+                                   ^
+src/multimediatestwidget.h:39:13: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    private slots:
+            ^
+src/playerbutton.h:31:3: style: Class 'PlayerButton' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+  PlayerButton( QWidget *parent = 0 );
+  ^
+src/playerlyricscdg.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+src/playerlyricscdg.cpp:133:23: warning: Either the condition 'offset>CDG_FULL_HEIGHT*CDG_FULL_WIDTH' is redundant or the array 'm_cdgScreen[64800]' is accessed at index 64800, which is out of bounds. [arrayIndexOutOfBoundsCond]
+    return m_cdgScreen[offset];
+                      ^
+src/playerlyricscdg.cpp:127:35: note: Assuming that condition 'offset>CDG_FULL_HEIGHT*CDG_FULL_WIDTH' is not redundant
+    if ( x < 0 || y < 0 || offset > CDG_FULL_HEIGHT * CDG_FULL_WIDTH )
+                                  ^
+src/playerlyricscdg.cpp:133:23: note: Array index out of bounds
+    return m_cdgScreen[offset];
+                      ^
+src/playerlyricscdg.cpp:146:16: warning: Either the condition 'offset>CDG_FULL_HEIGHT*CDG_FULL_WIDTH' is redundant or the array 'm_cdgScreen[64800]' is accessed at index 64800, which is out of bounds. [arrayIndexOutOfBoundsCond]
+    m_cdgScreen[offset] = color;
+               ^
+src/playerlyricscdg.cpp:140:35: note: Assuming that condition 'offset>CDG_FULL_HEIGHT*CDG_FULL_WIDTH' is not redundant
+    if ( x < 0 || y < 0 || offset > CDG_FULL_HEIGHT * CDG_FULL_WIDTH )
+                                  ^
+src/playerlyricscdg.cpp:146:16: note: Array index out of bounds
+    m_cdgScreen[offset] = color;
+               ^
+src/playerlyricscdg.cpp:33:5: performance: Variable 'm_hOffset' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_hOffset = 0;
+    ^
+src/playerlyricscdg.cpp:34:5: performance: Variable 'm_vOffset' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_vOffset = 0;
+    ^
+src/playerlyricscdg.cpp:35:5: performance: Variable 'm_borderColor' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_borderColor = 0;
+    ^
+src/playerlyricscdg.cpp:36:5: performance: Variable 'm_bgColor' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_bgColor = 0;
+    ^
+src/playerlyricscdg.cpp:120:25: style: inconclusive: Technically the member function 'PlayerLyricsCDG::getPixel' can be const. [functionConst]
+quint8 PlayerLyricsCDG::getPixel( int x, int y )
+                        ^
+src/playerlyricscdg.h:59:16: note: Technically the member function 'PlayerLyricsCDG::getPixel' can be const.
+        quint8 getPixel( int x, int y );
+               ^
+src/playerlyricscdg.cpp:120:25: note: Technically the member function 'PlayerLyricsCDG::getPixel' can be const.
+quint8 PlayerLyricsCDG::getPixel( int x, int y )
+                        ^
+src/playerlyricscdg.h:41:17: style: The function 'load' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool    load( QIODevice * file, const QString &filename = "" );
+                ^
+src/playerlyrics.h:46:25: note: Virtual function in base class
+        virtual bool    load( QIODevice * file, const QString &filename = "" ) = 0;
+                        ^
+src/playerlyricscdg.h:41:17: note: Function in derived class
+        bool    load( QIODevice * file, const QString &filename = "" );
+                ^
+src/playerlyricscdg.h:44:17: style: The function 'nextUpdate' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        qint64  nextUpdate() const;
+                ^
+src/playerlyrics.h:49:25: note: Virtual function in base class
+        virtual qint64  nextUpdate() const = 0;
+                        ^
+src/playerlyricscdg.h:44:17: note: Function in derived class
+        qint64  nextUpdate() const;
+                ^
+src/playerlyricscdg.h:49:25: style: The function 'render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual bool    render(KaraokePainter& p, qint64 time);
+                        ^
+src/playerlyrics.h:67:25: note: Virtual function in base class
+        virtual bool    render( KaraokePainter& p, qint64 time ) = 0;
+                        ^
+src/playerlyricscdg.h:49:25: note: Function in derived class
+        virtual bool    render(KaraokePainter& p, qint64 time);
+                        ^
+src/playerlyricscdg.cpp:56:36: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    while ( (readlen = file->read( (char*) &sc, sizeof(sc) )) == sizeof(sc) )
+                                   ^
+src/playerlyricscdg.cpp:151:29: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    CDG_MemPreset* preset = (CDG_MemPreset*) data;
+                            ^
+src/playerlyricscdg.cpp:169:32: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    CDG_BorderPreset* preset = (CDG_BorderPreset*) data;
+                               ^
+src/playerlyricscdg.cpp:208:33: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    CDG_LoadColorTable* table = (CDG_LoadColorTable*) data;
+                                ^
+src/playerlyricscdg.cpp:234:22: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    CDG_Tile* tile = (CDG_Tile*) data;
+                     ^
+src/playerlyricscdg.cpp:274:22: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+    CDG_Tile* tile = (CDG_Tile*) data;
+                     ^
+src/playerlyricscdg.cpp:325:58: style: inconclusive: Function 'cmdScroll' argument 2 names different: declaration 'loop' definition 'copy'. [funcArgNamesDifferent]
+void PlayerLyricsCDG::cmdScroll( const char * data, bool copy )
+                                                         ^
+src/playerlyricscdg.h:69:49: note: Function 'cmdScroll' argument 2 names different: declaration 'loop' definition 'copy'.
+        void cmdScroll( const char * data, bool loop );
+                                                ^
+src/playerlyricscdg.cpp:325:58: note: Function 'cmdScroll' argument 2 names different: declaration 'loop' definition 'copy'.
+void PlayerLyricsCDG::cmdScroll( const char * data, bool copy )
+                                                         ^
+src/playerlyricscdg.cpp:634:18: style: Variable 'sc' can be declared as reference to const [constVariableReference]
+        SubCode& sc = m_cdgStream[ m_cdgStreamIndex ].subcode;
+                 ^
+src/playerlyricscdg.cpp:151:20: style: Variable 'preset' can be declared as pointer to const [constVariablePointer]
+    CDG_MemPreset* preset = (CDG_MemPreset*) data;
+                   ^
+src/playerlyricscdg.cpp:169:23: style: Variable 'preset' can be declared as pointer to const [constVariablePointer]
+    CDG_BorderPreset* preset = (CDG_BorderPreset*) data;
+                      ^
+src/playerlyricscdg.cpp:248:12: style: Variable 'mask' can be declared as const array [constVariable]
+    quint8 mask[6] = { 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
+           ^
+src/playerlyricscdg.cpp:292:12: style: Variable 'mask' can be declared as const array [constVariable]
+    quint8 mask[6] = { 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
+           ^
+src/playerlyricstext.cpp:36:13: performance: Variable 'm_lyricFile' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+            m_lyricFile = lyricFile;
+            ^
+src/playerlyricstext.cpp:65:5: performance: Variable 'm_nextUpdateTime' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_nextUpdateTime = 0;
+    ^
+src/playerlyricstext.cpp:68:5: performance: Variable 'm_artist' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_artist = artist;
+    ^
+src/playerlyricstext.cpp:69:5: performance: Variable 'm_title' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_title = title;
+    ^
+src/playerlyricstext.cpp:72:5: performance: Variable 'm_renderFont' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_renderFont = pSettings->playerLyricsFont;
+    ^
+src/playerlyricstext.cpp:231:24: performance: inconclusive: Technically the member function 'PlayerLyricsText::drawNotification' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+void PlayerLyricsText::drawNotification(KaraokePainter &p, qint64 timeleft)
+                       ^
+src/playerlyricstext.h:76:17: note: Technically the member function 'PlayerLyricsText::drawNotification' can be static (but you may consider moving to unnamed namespace).
+        void    drawNotification( KaraokePainter &p, qint64 timeleft);
+                ^
+src/playerlyricstext.cpp:231:24: note: Technically the member function 'PlayerLyricsText::drawNotification' can be static (but you may consider moving to unnamed namespace).
+void PlayerLyricsText::drawNotification(KaraokePainter &p, qint64 timeleft)
+                       ^
+src/playerlyrictext_line.h:37:9: style: Class 'PlayerLyricTextLine' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        PlayerLyricTextLine( const LyricsLoader::Container& line );
+        ^
+src/playerlyricstext.cpp:34:9: style: Class 'PlayerLyricsTextCallback' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        PlayerLyricsTextCallback( const QString& lyricFile ) : LyricsLoaderCallback()
+        ^
+src/playerlyricstext.h:58:17: style: The function 'load' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        bool    load(QIODevice * file, const QString &filename );
+                ^
+src/playerlyrics.h:46:25: note: Virtual function in base class
+        virtual bool    load( QIODevice * file, const QString &filename = "" ) = 0;
+                        ^
+src/playerlyricstext.h:58:17: note: Function in derived class
+        bool    load(QIODevice * file, const QString &filename );
+                ^
+src/playerlyricstext.h:61:17: style: The function 'nextUpdate' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        qint64  nextUpdate() const;
+                ^
+src/playerlyrics.h:49:25: note: Virtual function in base class
+        virtual qint64  nextUpdate() const = 0;
+                        ^
+src/playerlyricstext.h:61:17: note: Function in derived class
+        qint64  nextUpdate() const;
+                ^
+src/playerlyricstext.h:69:25: style: The function 'render' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual bool    render( KaraokePainter& p, qint64 time );
+                        ^
+src/playerlyrics.h:67:25: note: Virtual function in base class
+        virtual bool    render( KaraokePainter& p, qint64 time ) = 0;
+                        ^
+src/playerlyricstext.h:69:25: note: Function in derived class
+        virtual bool    render( KaraokePainter& p, qint64 time );
+                        ^
+src/playerlyricstext.cpp:239:57: style: inconclusive: Function 'render' argument 2 names different: declaration 'time' definition 'timems'. [funcArgNamesDifferent]
+bool PlayerLyricsText::render(KaraokePainter &p, qint64 timems)
+                                                        ^
+src/playerlyricstext.h:69:59: note: Function 'render' argument 2 names different: declaration 'time' definition 'timems'.
+        virtual bool    render( KaraokePainter& p, qint64 time );
+                                                          ^
+src/playerlyricstext.cpp:239:57: note: Function 'render' argument 2 names different: declaration 'time' definition 'timems'.
+bool PlayerLyricsText::render(KaraokePainter &p, qint64 timems)
+                                                        ^
+src/playerlyricscdg.cpp:454:37: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_MemPreset* preset = (CDG_MemPreset*) data;
+                                    ^
+src/playerlyricscdg.cpp:461:40: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_BorderPreset* preset = (CDG_BorderPreset*) data;
+                                       ^
+src/playerlyricscdg.cpp:470:41: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_LoadColorTable* table = (CDG_LoadColorTable*) data;
+                                        ^
+src/playerlyricscdg.cpp:491:41: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_LoadColorTable* table = (CDG_LoadColorTable*) data;
+                                        ^
+src/playerlyricscdg.cpp:514:30: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_Tile* tile = (CDG_Tile*) data;
+                             ^
+src/playerlyricscdg.cpp:542:30: warning: Potentially invalid type conversion in old-style C cast, clarify/fix with C++ cast [dangerousTypeCast]
+            CDG_Tile* tile = (CDG_Tile*) data;
+                             ^
+src/playerlyricscdg.cpp:445:14: style: Variable 'sc' can be declared as reference to const [constVariableReference]
+    SubCode& sc = packet->subcode;
+             ^
+src/playerlyricscdg.cpp:454:28: style: Variable 'preset' can be declared as pointer to const [constVariablePointer]
+            CDG_MemPreset* preset = (CDG_MemPreset*) data;
+                           ^
+src/playerlyricscdg.cpp:461:31: style: Variable 'preset' can be declared as pointer to const [constVariablePointer]
+            CDG_BorderPreset* preset = (CDG_BorderPreset*) data;
+                              ^
+src/playerlyricscdg.cpp:523:20: style: Variable 'mask' can be declared as const array [constVariable]
+            quint8 mask[6] = { 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
+                   ^
+src/playerlyricscdg.cpp:558:20: style: Variable 'mask' can be declared as const array [constVariable]
+            quint8 mask[6] = { 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
+                   ^
+src/playerlyrictext_line.cpp:26:5: performance: Variable 'm_start' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_start = 0;
+    ^
+src/playerlyrictext_line.cpp:27:5: performance: Variable 'm_end' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_end = 0;
+    ^
+src/playerlyrictext_line.cpp:28:5: performance: Variable 'm_duration' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_duration = 0;
+    ^
+src/playerlyrictext_line.cpp:45:9: performance: Variable 'm_line' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+        m_line = line;
+        ^
+src/playerwidget.h:59:9: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+ public slots:
+        ^
+src/settings.cpp:43:11: warning: Member variable 'Settings::playerLyricsTextEachCharacter' is not initialized in the constructor. [uninitMemberVar]
+Settings::Settings()
+          ^
+src/settings.cpp:45:5: performance: Variable 'm_appDataPath' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_appDataPath = QStandardPaths::writableLocation( QStandardPaths::AppDataLocation );
+    ^
+src/settings.cpp:312:22: performance: inconclusive: Technically the member function 'Settings::fromStringList' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+QJsonValue Settings::fromStringList(const QStringList &list)
+                     ^
+src/settings.h:153:25: note: Technically the member function 'Settings::fromStringList' can be static (but you may consider moving to unnamed namespace).
+        QJsonValue      fromStringList( const QStringList& list );
+                        ^
+src/settings.cpp:312:22: note: Technically the member function 'Settings::fromStringList' can be static (but you may consider moving to unnamed namespace).
+QJsonValue Settings::fromStringList(const QStringList &list)
+                     ^
+src/settings.cpp:320:23: performance: inconclusive: Technically the member function 'Settings::toStringList' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+QStringList Settings::toStringList( const QJsonValue& value, const QString& defaultval )
+                      ^
+src/settings.h:154:25: note: Technically the member function 'Settings::toStringList' can be static (but you may consider moving to unnamed namespace).
+        QStringList     toStringList( const QJsonValue& value, const QString& defaultval = "" );
+                        ^
+src/settings.cpp:320:23: note: Technically the member function 'Settings::toStringList' can be static (but you may consider moving to unnamed namespace).
+QStringList Settings::toStringList( const QJsonValue& value, const QString& defaultval )
+                      ^
+src/settings.cpp:489:72: style: C-style pointer casting [cstyleCast]
+    QList<QSslCertificate> ca = QSslCertificate::fromData( QByteArray( (char*) cacert_der, 1423), QSsl::Der );
+                                                                       ^
+src/songdatabasescanner.h:60:12: error: There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it. [unknownMacro]
+    public slots:
+           ^
+src/settings.cpp:471:65: style: C-style pointer casting [cstyleCast]
+    pCertUser = CertCreateCertificateContext(X509_ASN_ENCODING, (BYTE*)derdata.data(), derdata.size() );
+                                                                ^
+src/songqueueitem.h:62:1: error: There is an unknown macro here somewhere. Configuration is required. If Q_DECLARE_METATYPE is a macro then please configure it. [unknownMacro]
+Q_DECLARE_METATYPE(SongQueueItem)
+^
+src/util.cpp:86:46: style: inconclusive: Function 'enumerateDirectory' argument 1 names different: declaration 'rootPath' definition 'rootPaths'. [funcArgNamesDifferent]
+void Util::enumerateDirectory(const QString &rootPaths, const QStringList &extensions, QStringList &files)
+                                             ^
+src/util.h:43:56: note: Function 'enumerateDirectory' argument 1 names different: declaration 'rootPath' definition 'rootPaths'.
+        static void enumerateDirectory( const QString& rootPath, const QStringList& extensions, QStringList& files );
+                                                       ^
+src/util.cpp:86:46: note: Function 'enumerateDirectory' argument 1 names different: declaration 'rootPath' definition 'rootPaths'.
+void Util::enumerateDirectory(const QString &rootPaths, const QStringList &extensions, QStringList &files)
+                                             ^
+nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
+

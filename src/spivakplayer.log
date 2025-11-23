@@ -1,0 +1,4 @@
+2025-11-22 14:29:11 DEBUG Background objects: 5 loaded
+2025-11-22 14:29:11 DEBUG Background objects: 5 loaded
+2025-11-22 14:29:11 DEBUG Gstreamer: setting up pipeline: 'appsrc name=iosource ! decodebin name=decoder decoder. ! audio/x-raw ! audioconvert ! scaletempo name=tempo ! volume name=volume ! audioconvert ! audioresample ! autoaudiosink'
+2025-11-22 14:29:11 DEBUG Audio system initialized successfully

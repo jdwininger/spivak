@@ -1,0 +1,595 @@
+cd 3rdparty/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/3rdparty.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jeremy/Source/spivak/3rdparty'
+cd cld2/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/cld2/cld2.pro ) && make -f Makefile 
+cd libsonivox/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/libsonivox/libsonivox.pro ) && make -f Makefile 
+make[2]: Entering directory '/home/jeremy/Source/spivak/3rdparty/libsonivox'
+cd src/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/libsonivox/src/src.pro ) && make -f Makefile 
+make[2]: Entering directory '/home/jeremy/Source/spivak/3rdparty/cld2'
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cldutil.o internal/cldutil.cc
+make[3]: Entering directory '/home/jeremy/Source/spivak/3rdparty/libsonivox/src'
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_mididata.o eas_mididata.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_pan.o eas_pan.c
+In file included from eas_pan.c:34:
+eas_pan.h:34: warning: header guard ‘EAS_PAN_H’ followed by ‘#define’ of a different macro [-Wheader-guard]
+   34 | #ifndef EAS_PAN_H
+eas_pan.h:35: note: ‘_EAS_PAN_H’ is defined here; did you mean ‘EAS_PAN_H’?
+   35 | #define _EAS_PAN_H
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_wavefiledata.o eas_wavefiledata.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_reverb.o eas_reverb.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_mdls.o eas_mdls.c
+In file included from internal/cldutil.h:24,
+                 from internal/cldutil.cc:20:
+internal/cldutil_shared.h:403:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  403 | inline const uint32 QuadHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/cldutil_shared.h:431:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  431 | inline const uint32 OctaHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cldutil_shared.o internal/cldutil_shared.cc
+eas_mdls.c:324:1: warning: missing braces around initializer [-Wmissing-braces]
+  324 | {
+      | ^
+  325 |     0,              /* not modified */
+      |     {
+......
+  382 | };
+      | }
+eas_mdls.c: In function ‘DLSParser’:
+eas_mdls.c:568:38: warning: comparison of integer expressions of different signedness: ‘EAS_I32’ {aka ‘long int’} and ‘long unsigned int’ [-Wsign-compare]
+  568 |     if ((ptblSize == 0) || (ptblSize > DLS_MAX_WAVE_COUNT * sizeof(POOLCUE) + sizeof(POOLTABLE)))
+      |                                      ^
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_mixbuf.o eas_mixbuf.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_tcdata.o eas_tcdata.c
+In file included from eas_tcdata.c:33:
+eas_tcdata.h:32: warning: header guard ‘EAS_TFDATA_H’ followed by ‘#define’ of a different macro [-Wheader-guard]
+   32 | #ifndef EAS_TFDATA_H
+eas_tcdata.h:33: note: ‘EAS_TCDATA_H’ is defined here; did you mean ‘EAS_TFDATA_H’?
+   33 | #define EAS_TCDATA_H
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_chorus.o eas_chorus.c
+In file included from internal/cldutil_shared.cc:19:
+internal/cldutil_shared.h:403:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  403 | inline const uint32 QuadHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/cldutil_shared.h:431:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  431 | inline const uint32 OctaHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o compact_lang_det.o internal/compact_lang_det.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_pcmdata.o eas_pcmdata.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_math.o eas_math.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_tonecontrol.o eas_tonecontrol.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o compact_lang_det_hint_code.o internal/compact_lang_det_hint_code.cc
+In file included from eas_tonecontrol.c:38:
+eas_tcdata.h:32: warning: header guard ‘EAS_TFDATA_H’ followed by ‘#define’ of a different macro [-Wheader-guard]
+   32 | #ifndef EAS_TFDATA_H
+eas_tcdata.h:33: note: ‘EAS_TCDATA_H’ is defined here; did you mean ‘EAS_TFDATA_H’?
+   33 | #define EAS_TCDATA_H
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_voicemgt.o eas_voicemgt.c
+internal/compact_lang_det_hint_code.cc:912:1: warning: missing initializer for member ‘CLD2::TLDLookup::onelangprior2’ [-Wmissing-field-initializers]
+  912 | };
+      | ^
+internal/compact_lang_det_hint_code.cc: In function ‘std::string CLD2::TrimCLDLangTagsHint(const std::string&)’:
+internal/compact_lang_det_hint_code.cc:1060:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1060 |     if (comma == string::npos) {comma = langtags.size();} // fake trailing comma
+      |         ~~~~~~^~~~~~~~~~~~~~~
+internal/compact_lang_det_hint_code.cc: In function ‘void CLD2::SetCLDLangTagsHint(const std::string&, CLDLangPriors*)’:
+internal/compact_lang_det_hint_code.cc:1403:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const std::__cxx11::basic_string<char>::size_type’ {aka ‘const long unsigned int’} [-Wsign-compare]
+ 1403 |     if (comma == string::npos) {comma = langtags.size();} // fake trailing comma
+      |         ~~~~~~^~~~~~~~~~~~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o compact_lang_det_impl.o internal/compact_lang_det_impl.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_public.o eas_public.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_dlssynth.o eas_dlssynth.c
+In file included from eas_dlssynth.c:37:
+eas_pan.h:34: warning: header guard ‘EAS_PAN_H’ followed by ‘#define’ of a different macro [-Wheader-guard]
+   34 | #ifndef EAS_PAN_H
+eas_pan.h:35: note: ‘_EAS_PAN_H’ is defined here; did you mean ‘EAS_PAN_H’?
+   35 | #define _EAS_PAN_H
+eas_dlssynth.c: In function ‘DLS_UpdateEnvelope’:
+eas_dlssynth.c:478:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  478 |             if (*pIncrement != 0)
+      |                ^
+eas_dlssynth.c:482:9: note: here
+  482 |         case eEnvelopeStateDelay:
+      |         ^~~~
+eas_dlssynth.c:499:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  499 |             *pValue = SYNTH_FULL_SCALE_EG1_GAIN;
+eas_dlssynth.c:502:9: note: here
+  502 |         case eEnvelopeStateAttack:
+      |         ^~~~
+eas_dlssynth.c:520:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  520 |                 *pIncrement = 0;
+      |                 ~~~~~~~~~~~~^~~
+eas_dlssynth.c:523:9: note: here
+  523 |         case eEnvelopeStateHold:
+      |         ^~~~
+eas_dlssynth.c:532:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  532 |             if (pEnvParams->decayTime != ZERO_TIME_IN_CENTS)
+      |                ^
+eas_dlssynth.c:543:9: note: here
+  543 |         case eEnvelopeStateDecay:
+      |         ^~~~
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_midi.o eas_midi.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_flog.o eas_flog.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_wtengine.o eas_wtengine.c
+In file included from internal/cldutil.h:24,
+                 from internal/compact_lang_det_impl.cc:26:
+internal/cldutil_shared.h:403:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  403 | inline const uint32 QuadHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/cldutil_shared.h:431:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  431 | inline const uint32 OctaHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::loadDataFromFile(const char*)’:
+internal/compact_lang_det_impl.cc:172:37: warning: unused parameter ‘fileName’ [-Wunused-parameter]
+  172 |   void loadDataFromFile(const char* fileName) {
+      |                         ~~~~~~~~~~~~^~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::loadDataFromRawAddress(const void*, uint32_t)’:
+internal/compact_lang_det_impl.cc:176:43: warning: unused parameter ‘rawAddress’ [-Wunused-parameter]
+  176 |   void loadDataFromRawAddress(const void* rawAddress, const uint32_t length) {
+      |                               ~~~~~~~~~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc:176:70: warning: unused parameter ‘length’ [-Wunused-parameter]
+  176 |   void loadDataFromRawAddress(const void* rawAddress, const uint32_t length) {
+      |                                                       ~~~~~~~~~~~~~~~^~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::DemoteNotTop40(Tote*, uint16)’:
+internal/compact_lang_det_impl.cc:467:27: warning: unused parameter ‘chunk_tote’ [-Wunused-parameter]
+  467 | void DemoteNotTop40(Tote* chunk_tote, uint16 psplus_one) {
+      |                     ~~~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc:467:46: warning: unused parameter ‘psplus_one’ [-Wunused-parameter]
+  467 | void DemoteNotTop40(Tote* chunk_tote, uint16 psplus_one) {
+      |                                       ~~~~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::RemoveExtendedLanguages(DocTote*)’:
+internal/compact_lang_det_impl.cc:977:39: warning: unused parameter ‘doc_tote’ [-Wunused-parameter]
+  977 | void RemoveExtendedLanguages(DocTote* doc_tote) {
+      |                              ~~~~~~~~~^~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::ApplyAllLanguageHints(Tote*, int, uint8*)’:
+internal/compact_lang_det_impl.cc:1206:34: warning: unused parameter ‘chunk_tote’ [-Wunused-parameter]
+ 1206 | void ApplyAllLanguageHints(Tote* chunk_tote, int tote_grams,
+      |                            ~~~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc:1206:50: warning: unused parameter ‘tote_grams’ [-Wunused-parameter]
+ 1206 | void ApplyAllLanguageHints(Tote* chunk_tote, int tote_grams,
+      |                                              ~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc:1207:32: warning: unused parameter ‘lang_hint_boost’ [-Wunused-parameter]
+ 1207 |                         uint8* lang_hint_boost) {
+      |                         ~~~~~~~^~~~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::PrintLang(FILE*, Tote*, Language, bool, Language, bool)’:
+internal/compact_lang_det_impl.cc:1216:31: warning: unused parameter ‘chunk_tote’ [-Wunused-parameter]
+ 1216 | void PrintLang(FILE* f, Tote* chunk_tote,
+      |                         ~~~~~~^~~~~~~~~~
+internal/compact_lang_det_impl.cc:1218:41: warning: unused parameter ‘prior_unreliable’ [-Wunused-parameter]
+ 1218 |               Language prior_lang, bool prior_unreliable) {
+      |                                    ~~~~~^~~~~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘double CLD2::GetNormalizedScore(Language, ULScript, int, int)’:
+internal/compact_lang_det_impl.cc:1269:36: warning: unused parameter ‘lang’ [-Wunused-parameter]
+ 1269 | double GetNormalizedScore(Language lang, ULScript ulscript,
+      |                           ~~~~~~~~~^~~~
+internal/compact_lang_det_impl.cc:1269:51: warning: unused parameter ‘ulscript’ [-Wunused-parameter]
+ 1269 | double GetNormalizedScore(Language lang, ULScript ulscript,
+      |                                          ~~~~~~~~~^~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘void CLD2::CalcSummaryLang(DocTote*, int, const int*, const Language*, const int*, Language*, bool*, bool, bool, int)’:
+internal/compact_lang_det_impl.cc:1455:7: warning: unused variable ‘plang_second’ [-Wunused-variable]
+ 1455 |   int plang_second = PerScriptNumber(ULScript_Latin, language3[active_slot[1]]);
+      |       ^~~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1414:31: warning: unused parameter ‘doc_tote’ [-Wunused-parameter]
+ 1414 | void CalcSummaryLang(DocTote* doc_tote, int total_text_bytes,
+      |                      ~~~~~~~~~^~~~~~~~
+internal/compact_lang_det_impl.cc:1415:33: warning: unused parameter ‘reliable_percent3’ [-Wunused-parameter]
+ 1415 |                      const int* reliable_percent3,
+      |                      ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc: In function ‘CLD2::Language CLD2::DetectLanguageSummaryV2(const char*, int, bool, const CLDHints*, bool, int, Language, Language*, int*, double*, ResultChunkVector*, int*, bool*)’:
+internal/compact_lang_det_impl.cc:1849:14: warning: unused variable ‘ulscript’ [-Wunused-variable]
+ 1849 |     ULScript ulscript = scriptspan.ulscript;
+      |              ^~~~~~~~
+internal/compact_lang_det_impl.cc:1788:7: warning: unused variable ‘next_other_tote’ [-Wunused-variable]
+ 1788 |   int next_other_tote = 2;
+      |       ^~~~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1789:7: warning: unused variable ‘tote_num’ [-Wunused-variable]
+ 1789 |   int tote_num = 0;
+      |       ^~~~~~~~
+internal/compact_lang_det_impl.cc:1793:8: warning: unused variable ‘tote_seen’ [-Wunused-variable]
+ 1793 |   bool tote_seen[4] = {false, false, false, false};
+      |        ^~~~~~~~~
+internal/compact_lang_det_impl.cc:1794:7: warning: unused variable ‘tote_grams’ [-Wunused-variable]
+ 1794 |   int tote_grams[4] = {0, 0, 0, 0};     // Number in partial chunk
+      |       ^~~~~~~~~~
+internal/compact_lang_det_impl.cc:1795:12: warning: unused variable ‘tote_script’ [-Wunused-variable]
+ 1795 |   ULScript tote_script[4] =
+      |            ^~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1814:7: warning: unused variable ‘advance_by’ [-Wunused-variable]
+ 1814 |   int advance_by = 2;                   // Advance 2 bytes
+      |       ^~~~~~~~~~
+internal/compact_lang_det_impl.cc:1815:7: warning: unused variable ‘advance_limit’ [-Wunused-variable]
+ 1815 |   int advance_limit = textlimit >> 3;   // For first 1/8 of max document
+      |       ^~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1817:7: warning: variable ‘initial_word_span’ set but not used [-Wunused-but-set-variable]
+ 1817 |   int initial_word_span = kDefaultWordSpan;
+      |       ^~~~~~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1828:7: warning: unused variable ‘chunksizeunis’ [-Wunused-variable]
+ 1828 |   int chunksizeunis = (chunksizequads * 5) >> 1;
+      |       ^~~~~~~~~~~~~
+internal/compact_lang_det_impl.cc:1832:7: warning: unused variable ‘spantooshortlimit’ [-Wunused-variable]
+ 1832 |   int spantooshortlimit = kShortSpanThresh;
+      |       ^~~~~~~~~~~~~~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o debug.o internal/debug.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_imaadpcm.o eas_imaadpcm.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_wtsynth.o eas_wtsynth.c
+In file included from eas_wtsynth.c:37:
+eas_pan.h:34: warning: header guard ‘EAS_PAN_H’ followed by ‘#define’ of a different macro [-Wheader-guard]
+   34 | #ifndef EAS_PAN_H
+eas_pan.h:35: note: ‘_EAS_PAN_H’ is defined here; did you mean ‘EAS_PAN_H’?
+   35 | #define _EAS_PAN_H
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_pcm.o eas_pcm.c
+In file included from internal/cldutil.h:24,
+                 from internal/debug.cc:23:
+internal/cldutil_shared.h:403:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  403 | inline const uint32 QuadHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/cldutil_shared.h:431:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  431 | inline const uint32 OctaHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/debug.cc: In function ‘void CLD2::CLD2_Debug(const char*, int, int, bool, bool, const ScoringHitBuffer*, const ScoringContext*, const ChunkSpan*, const ChunkSummary*)’:
+internal/debug.cc:278:22: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  278 |                 bool more_to_come, bool score_cjk,
+      |                 ~~~~~^~~~~~~~~~~~
+internal/debug.cc: In function ‘void CLD2::CLD2_Debug2(const char*, bool, bool, const ScoringHitBuffer*, const ScoringContext*, const SummaryBuffer*)’:
+internal/debug.cc:412:23: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  412 |                  bool more_to_come, bool score_cjk,
+      |                  ~~~~~^~~~~~~~~~~~
+internal/debug.cc:412:42: warning: unused parameter ‘score_cjk’ [-Wunused-parameter]
+  412 |                  bool more_to_come, bool score_cjk,
+      |                                     ~~~~~^~~~~~~~~
+internal/debug.cc:413:42: warning: unused parameter ‘hitbuffer’ [-Wunused-parameter]
+  413 |                  const ScoringHitBuffer* hitbuffer,
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o fixunicodevalue.o internal/fixunicodevalue.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_mixer.o eas_mixer.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o generated_entities.o internal/generated_entities.cc
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o generated_language.o internal/generated_language.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_wavefile.o eas_wavefile.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o generated_ulscript.o internal/generated_ulscript.cc
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o getonescriptspan.o internal/getonescriptspan.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_ima_tables.o eas_ima_tables.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_data.o eas_data.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_config.o eas_config.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_report.o eas_report.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_hostmm.o eas_hostmm.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_smf.o eas_smf.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_smfdata.o eas_smfdata.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lang_script.o internal/lang_script.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_imelody.o eas_imelody.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o offsetmap.o internal/offsetmap.cc
+eas_imelody.c: In function ‘IMY_MetaData.part.0’:
+eas_imelody.c:1413:5: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-truncation]
+ 1413 |     strncpy((char*) pData->metadata.buffer, (char*) buffer, (size_t) len);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eas_imelody.c:1410:21: note: length computed here
+ 1410 |     len = (EAS_I32) strlen((char*) buffer);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_imelodydata.o eas_imelodydata.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_ota.o eas_ota.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_otadata.o eas_otadata.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_rtttl.o eas_rtttl.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_rtttldata.o eas_rtttldata.c
+internal/offsetmap.cc: In member function ‘void CLD2::OffsetMap::Printmap(const char*)’:
+internal/offsetmap.cc:84:43: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+   84 |     fprintf(fout, "%c%02d ", "&=+-"[OpPart(diffs_[i])], LenPart(diffs_[i]));
+      |                                     ~~~~~~^~~~~~~~~~~
+internal/offsetmap.cc: In member function ‘void CLD2::OffsetMap::DumpString()’:
+internal/offsetmap.cc:210:45: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+  210 |     fprintf(stderr, "%c%02d ", "&=+-"[OpPart(diffs_[i])], LenPart(diffs_[i]));
+      |                                       ~~~~~~^~~~~~~~~~~
+internal/offsetmap.cc: In member function ‘bool CLD2::OffsetMap::MoveLeft()’:
+internal/offsetmap.cc:404:8: warning: variable ‘retval’ set but not used [-Wunused-but-set-variable]
+  404 |   bool retval = true;
+      |        ^~~~~~
+internal/offsetmap.cc: In static member function ‘static bool CLD2::OffsetMap::CopyInserts(CLD2::OffsetMap*, CLD2::OffsetMap*)’:
+internal/offsetmap.cc:484:40: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  484 |   while (ok && (source->next_diff_sub_ != source->diffs_.size())) {
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+internal/offsetmap.cc: In static member function ‘static bool CLD2::OffsetMap::CopyDeletes(CLD2::OffsetMap*, CLD2::OffsetMap*)’:
+internal/offsetmap.cc:498:40: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  498 |   while (ok && (source->next_diff_sub_ != source->diffs_.size())) {
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o scoreonescriptspan.o internal/scoreonescriptspan.cc
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_xmf.o eas_xmf.c
+gcc -c -pipe -Wno-unused -O2 -fPIC -Wall -Wextra -D_REENTRANT -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_44100 -DMAX_SYNTH_VOICES=64 -DEAS_WT_SYNTH -D_8_BIT_SAMPLES -D_FILTER_ENABLED -D_WAVE_PARSER -DMAX_SMF_STREAMS=32 -D_REVERB_ENABLED -D_CHORUS_ENABLED -DDLS_SYNTHESIZER -DMMAPI_SUPPORT -DUNIFIED_DEBUG_MESSAGES -D_IMELODY_PARSER -D_RTTTL_PARSER -D_OTA_PARSER -D_XMF_PARSER -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I../include -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o eas_xmfdata.o eas_xmfdata.c
+rm -f libsonivox.a
+ar cqs libsonivox.a eas_mididata.o eas_pan.o eas_wavefiledata.o eas_reverb.o eas_mdls.o eas_mixbuf.o eas_tcdata.o eas_chorus.o eas_pcmdata.o eas_math.o eas_tonecontrol.o eas_voicemgt.o eas_public.o eas_dlssynth.o eas_midi.o eas_flog.o eas_wtengine.o eas_imaadpcm.o eas_wtsynth.o eas_pcm.o eas_mixer.o eas_wavefile.o eas_ima_tables.o eas_data.o eas_config.o eas_report.o eas_hostmm.o eas_smf.o eas_smfdata.o eas_imelody.o eas_imelodydata.o eas_ota.o eas_otadata.o eas_rtttl.o eas_rtttldata.o eas_xmf.o eas_xmfdata.o
+make[3]: Leaving directory '/home/jeremy/Source/spivak/3rdparty/libsonivox/src'
+make[2]: Leaving directory '/home/jeremy/Source/spivak/3rdparty/libsonivox'
+cd uchardet/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/uchardet/uchardet.pro ) && make -f Makefile 
+make[2]: Entering directory '/home/jeremy/Source/spivak/3rdparty/uchardet'
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o CharDistribution.o CharDistribution.cpp
+In file included from CharDistribution.cpp:38:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o JpCntx.o JpCntx.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangArabicModel.o LangModels/LangArabicModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangBulgarianModel.o LangModels/LangBulgarianModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangRussianModel.o LangModels/LangRussianModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangEsperantoModel.o LangModels/LangEsperantoModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangFrenchModel.o LangModels/LangFrenchModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangGermanModel.o LangModels/LangGermanModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangGreekModel.o LangModels/LangGreekModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangHungarianModel.o LangModels/LangHungarianModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangHebrewModel.o LangModels/LangHebrewModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangSpanishModel.o LangModels/LangSpanishModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangThaiModel.o LangModels/LangThaiModel.cpp
+In file included from internal/cldutil.h:24,
+                 from internal/scoreonescriptspan.cc:22:
+internal/cldutil_shared.h:403:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  403 | inline const uint32 QuadHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/cldutil_shared.h:431:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+  431 | inline const uint32 OctaHashV3Lookup4(const CLD2TableSummary* gram_obj,
+      |        ^~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::AddDistinctBoost1(uint32, ScoringContext*)’:
+internal/scoreonescriptspan.cc:105:31: warning: unused parameter ‘langprob’ [-Wunused-parameter]
+  105 | void AddDistinctBoost1(uint32 langprob, ScoringContext* scoringcontext) {
+      |                        ~~~~~~~^~~~~~~~
+internal/scoreonescriptspan.cc:105:57: warning: unused parameter ‘scoringcontext’ [-Wunused-parameter]
+  105 | void AddDistinctBoost1(uint32 langprob, ScoringContext* scoringcontext) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::ScoreAllHits(const char*, ULScript, bool, bool, const ScoringHitBuffer*, ScoringContext*, SummaryBuffer*, ChunkSpan*)’:
+internal/scoreonescriptspan.cc:266:24: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  266 |                   bool more_to_come, bool score_cjk,
+      |                   ~~~~~^~~~~~~~~~~~
+internal/scoreonescriptspan.cc:266:43: warning: unused parameter ‘score_cjk’ [-Wunused-parameter]
+  266 |                   bool more_to_come, bool score_cjk,
+      |                                      ~~~~~^~~~~~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::SummaryBufferToDocTote(const SummaryBuffer*, bool, DocTote*)’:
+internal/scoreonescriptspan.cc:306:34: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  306 |                             bool more_to_come, DocTote* doc_tote) {
+      |                             ~~~~~^~~~~~~~~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::SummaryBufferToVector(ScriptScanner*, const char*, const SummaryBuffer*, bool, ResultChunkVector*)’:
+internal/scoreonescriptspan.cc:391:33: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  391 |                            bool more_to_come, ResultChunkVector* vec) {
+      |                            ~~~~~^~~~~~~~~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::SharpenBoundaries(const char*, bool, ScoringHitBuffer*, ScoringContext*, SummaryBuffer*)’:
+internal/scoreonescriptspan.cc:781:29: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+  781 |                        bool more_to_come,
+      |                        ~~~~~^~~~~~~~~~~~
+internal/scoreonescriptspan.cc: In function ‘void CLD2::LinearizeHitBuffer(int, ScoringContext*, bool, bool, ScoringHitBuffer*)’:
+internal/scoreonescriptspan.cc:1045:30: warning: unused parameter ‘more_to_come’ [-Wunused-parameter]
+ 1045 |                         bool more_to_come, bool score_cjk,
+      |                         ~~~~~^~~~~~~~~~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o tote.o internal/tote.cc
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o LangTurkishModel.o LangModels/LangTurkishModel.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsHebrewProber.o nsHebrewProber.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsCharSetProber.o nsCharSetProber.cpp
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o utf8statetable.o internal/utf8statetable.cc
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsBig5Prober.o nsBig5Prober.cpp
+In file included from nsBig5Prober.h:43,
+                 from nsBig5Prober.cpp:38:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsEUCJPProber.o nsEUCJPProber.cpp
+In file included from nsEUCJPProber.h:49,
+                 from nsEUCJPProber.cpp:43:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsEUCKRProber.o nsEUCKRProber.cpp
+In file included from nsEUCKRProber.h:43,
+                 from nsEUCKRProber.cpp:38:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsEUCTWProber.o nsEUCTWProber.cpp
+In file included from nsEUCTWProber.h:43,
+                 from nsEUCTWProber.cpp:38:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsEscCharsetProber.o nsEscCharsetProber.cpp
+internal/utf8statetable.cc: In function ‘int CLD2::DoSpecialFixup(unsigned char, const unsigned char**, const unsigned char*, unsigned char**, unsigned char*)’:
+internal/utf8statetable.cc:597:47: warning: unused parameter ‘c’ [-Wunused-parameter]
+  597 | static int DoSpecialFixup(const unsigned char c,
+      |                           ~~~~~~~~~~~~~~~~~~~~^
+internal/utf8statetable.cc:598:43: warning: unused parameter ‘srcp’ [-Wunused-parameter]
+  598 |                     const unsigned char** srcp, const unsigned char* srclimit,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~~
+internal/utf8statetable.cc:598:70: warning: unused parameter ‘srclimit’ [-Wunused-parameter]
+  598 |                     const unsigned char** srcp, const unsigned char* srclimit,
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+internal/utf8statetable.cc:599:37: warning: unused parameter ‘dstp’ [-Wunused-parameter]
+  599 |                     unsigned char** dstp, unsigned char* dstlimit) {
+      |                     ~~~~~~~~~~~~~~~~^~~~
+internal/utf8statetable.cc:599:58: warning: unused parameter ‘dstlimit’ [-Wunused-parameter]
+  599 |                     unsigned char** dstp, unsigned char* dstlimit) {
+      |                                           ~~~~~~~~~~~~~~~^~~~~~~~
+internal/utf8statetable.cc: In function ‘int CLD2::UTF8GenericReplaceInternalTwoByte(const UTF8ReplaceObj_2*, const StringPiece&, StringPiece&, bool, int*, int*, int*, OffsetMap*)’:
+internal/utf8statetable.cc:905:7: warning: variable ‘src_lll’ set but not used [-Wunused-but-set-variable]
+  905 |   int src_lll = srclimit - src;
+      |       ^~~~~~~
+internal/utf8statetable.cc:906:7: warning: variable ‘dst_lll’ set but not used [-Wunused-but-set-variable]
+  906 |   int dst_lll = dstlimit - dst;
+      |       ^~~~~~~
+internal/utf8statetable.cc: In function ‘int CLD2::UTF8GenericReplaceInternal(const UTF8ReplaceObj*, const StringPiece&, StringPiece&, bool, int*, int*, int*, OffsetMap*)’:
+internal/utf8statetable.cc:712:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  712 |       dst[-3] = (unsigned char)Tbl[c + (nEntries * 3)];
+      |       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+internal/utf8statetable.cc:714:5: note: here
+  714 |     case kExitReplace2:    // update 2 bytes to change
+      |     ^~~~
+internal/utf8statetable.cc:715:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  715 |       dst[-2] = (unsigned char)Tbl[c + (nEntries * 2)];
+      |       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+internal/utf8statetable.cc:717:5: note: here
+  717 |     case kExitReplace1:    // update 1 byte to change
+      |     ^~~~
+internal/utf8statetable.cc:727:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  727 |       if ((nEntries != 256) && InStateZero(st, Tbl)) {
+      |       ^~
+internal/utf8statetable.cc:735:5: note: here
+  735 |     case kExitSpecial:      // Apply special fixups [read: hacks]
+      |     ^~~~
+internal/utf8statetable.cc: In function ‘int CLD2::UTF8GenericReplaceInternalTwoByte(const UTF8ReplaceObj_2*, const StringPiece&, StringPiece&, bool, int*, int*, int*, OffsetMap*)’:
+internal/utf8statetable.cc:989:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  989 |       dst[-3] = (unsigned char)(Tbl[c + (nEntries * 2)] & 0xff);
+      |       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+internal/utf8statetable.cc:991:5: note: here
+  991 |     case kExitReplace2_2:    // update 2 bytes to change
+      |     ^~~~
+internal/utf8statetable.cc:992:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  992 |       dst[-2] = (unsigned char)(Tbl[c + (nEntries * 1)] >> 8 & 0xff);
+      |       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+internal/utf8statetable.cc:994:5: note: here
+  994 |     case kExitReplace1_2:    // update 1 byte to change
+      |     ^~~~
+internal/utf8statetable.cc:1004:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1004 |       if ((nEntries != 256) && InStateZero_2(st, Tbl)) {
+      |       ^~
+internal/utf8statetable.cc:1012:5: note: here
+ 1012 |     case kExitReplaceOffset1_2:
+      |     ^~~~
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld_generated_cjk_uni_prop_80.o internal/cld_generated_cjk_uni_prop_80.cc
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsEscSM.o nsEscSM.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsGB2312Prober.o nsGB2312Prober.cpp
+In file included from nsGB2312Prober.h:43,
+                 from nsGB2312Prober.cpp:43:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsMBCSGroupProber.o nsMBCSGroupProber.cpp
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld2_generated_cjk_compatible.o internal/cld2_generated_cjk_compatible.cc
+In file included from nsSJISProber.h:49,
+                 from nsMBCSGroupProber.h:42,
+                 from nsMBCSGroupProber.cpp:41:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsMBCSSM.o nsMBCSSM.cpp
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld_generated_cjk_delta_bi_4.o internal/cld_generated_cjk_delta_bi_4.cc
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o generated_distinct_bi_0.o internal/generated_distinct_bi_0.cc
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsSBCSGroupProber.o nsSBCSGroupProber.cpp
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld2_generated_quadchrome_2.o internal/cld2_generated_quadchrome_2.cc
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsSBCharSetProber.o nsSBCharSetProber.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsSJISProber.o nsSJISProber.cpp
+In file included from nsSJISProber.h:49,
+                 from nsSJISProber.cpp:43:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsUTF8Prober.o nsUTF8Prober.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsLatin1Prober.o nsLatin1Prober.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o nsUniversalDetector.o nsUniversalDetector.cpp
+In file included from nsSJISProber.h:49,
+                 from nsMBCSGroupProber.h:42,
+                 from nsUniversalDetector.cpp:43:
+CharDistribution.h: In member function ‘void CharDistributionAnalysis::HandleData(const char*, PRUint32)’:
+CharDistribution.h:53:31: warning: unused parameter ‘aBuf’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                   ~~~~~~~~~~~~^~~~
+CharDistribution.h:53:46: warning: unused parameter ‘aLen’ [-Wunused-parameter]
+   53 |   void HandleData(const char* aBuf, PRUint32 aLen) {}
+      |                                     ~~~~~~~~~^~~~
+CharDistribution.h: In member function ‘virtual PRInt32 CharDistributionAnalysis::GetOrder(const char*)’:
+CharDistribution.h:99:40: warning: unused parameter ‘str’ [-Wunused-parameter]
+   99 |   virtual PRInt32 GetOrder(const char* str) {return -1;}
+      |                            ~~~~~~~~~~~~^~~
+nsUniversalDetector.cpp: In member function ‘virtual nsresult nsUniversalDetector::HandleData(const char*, PRUint32)’:
+nsUniversalDetector.cpp:115:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  115 |     if (aLen > 2)
+      |     ^~
+nsUniversalDetector.cpp:157:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  157 |       if (mDetectedCharset)
+      |       ^~
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o uchardet.o uchardet.cpp
+rm -f libuchardet.a
+ar cqs libuchardet.a CharDistribution.o JpCntx.o LangArabicModel.o LangBulgarianModel.o LangRussianModel.o LangEsperantoModel.o LangFrenchModel.o LangGermanModel.o LangGreekModel.o LangHungarianModel.o LangHebrewModel.o LangSpanishModel.o LangThaiModel.o LangTurkishModel.o nsHebrewProber.o nsCharSetProber.o nsBig5Prober.o nsEUCJPProber.o nsEUCKRProber.o nsEUCTWProber.o nsEscCharsetProber.o nsEscSM.o nsGB2312Prober.o nsMBCSGroupProber.o nsMBCSSM.o nsSBCSGroupProber.o nsSBCharSetProber.o nsSJISProber.o nsUTF8Prober.o nsLatin1Prober.o nsUniversalDetector.o uchardet.o
+make[2]: Leaving directory '/home/jeremy/Source/spivak/3rdparty/uchardet'
+cd sqlite3/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/3rdparty/sqlite3/sqlite3.pro ) && make -f Makefile 
+make[2]: Entering directory '/home/jeremy/Source/spivak/3rdparty/sqlite3'
+gcc -c -pipe -O2 -Wall -Wextra -DSQLITE_OMIT_LOAD_EXTENSION -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o sqlite3.o sqlite3.c
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld2_generated_deltaoctachrome.o internal/cld2_generated_deltaoctachrome.cc
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld2_generated_distinctoctachrome.o internal/cld2_generated_distinctoctachrome.cc
+g++ -c -pipe -O2 -Wall -Wextra  -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o cld_generated_score_quad_octa_2.o internal/cld_generated_score_quad_octa_2.cc
+rm -f libcld2.a
+ar cqs libcld2.a cldutil.o cldutil_shared.o compact_lang_det.o compact_lang_det_hint_code.o compact_lang_det_impl.o debug.o fixunicodevalue.o generated_entities.o generated_language.o generated_ulscript.o getonescriptspan.o lang_script.o offsetmap.o scoreonescriptspan.o tote.o utf8statetable.o cld_generated_cjk_uni_prop_80.o cld2_generated_cjk_compatible.o cld_generated_cjk_delta_bi_4.o generated_distinct_bi_0.o cld2_generated_quadchrome_2.o cld2_generated_deltaoctachrome.o cld2_generated_distinctoctachrome.o cld_generated_score_quad_octa_2.o
+make[2]: Leaving directory '/home/jeremy/Source/spivak/3rdparty/cld2'
+rm -f libsqlite3.a
+ar cqs libsqlite3.a sqlite3.o
+make[2]: Leaving directory '/home/jeremy/Source/spivak/3rdparty/sqlite3'
+make[1]: Leaving directory '/home/jeremy/Source/spivak/3rdparty'
+cd libkaraokelyrics/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/libkaraokelyrics/libkaraokelyrics.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jeremy/Source/spivak/libkaraokelyrics'
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_kfn.o lyricsparser_kfn.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_lrc.o lyricsparser_lrc.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_midi.o lyricsparser_midi.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsloader.o lyricsloader.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser.o lyricsparser.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_texts.o lyricsparser_texts.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_kok.o lyricsparser_kok.cpp
+g++ -c -pipe -O2 -fPIC -D_REENTRANT -Wall -Wextra -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt6 -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -I. -I/usr/lib64/qt6/mkspecs/linux-g++ -o lyricsparser_lyric.o lyricsparser_lyric.cpp
+rm -f libkaraokelyrics.a
+ar cqs libkaraokelyrics.a lyricsparser_kfn.o lyricsparser_lrc.o lyricsparser_midi.o lyricsloader.o lyricsparser.o lyricsparser_texts.o lyricsparser_kok.o lyricsparser_lyric.o
+make[1]: Leaving directory '/home/jeremy/Source/spivak/libkaraokelyrics'
+cd src/ && ( test -e Makefile || /usr/bin/qmake6 -o Makefile /home/jeremy/Source/spivak/src/src.pro ) && make -f Makefile 
+make[1]: Entering directory '/home/jeremy/Source/spivak/src'
+g++ -Wl,-O1 -Wl,-rpath-link,/usr/lib64 -o spivak  main.o languagedetector.o mainwindow.o mediaplayer.o settings.o playerlyrics.o playerlyricscdg.o songqueue.o playerlyricstext.o playerlyrictext_line.o karaokepainter.o playerrenderer.o logger.o karaokewidget.o karaokesong.o playerwidget.o playerbutton.o currentstate.o actionhandler.o actionhandler_lirc.o actionhandler_webserver.o karaokeplayable.o karaokeplayable_file.o karaokeplayable_zip.o karaokeplayable_kfn.o util.o songdatabasescanner.o background.o backgroundcolor.o backgroundimage.o backgroundvideo.o settingsdialog.o colorbutton.o labelshowhelp.o musiccollectionmanager.o queuekaraokewidget.o queuetableviewmodels.o queuekaraokewidget_addeditdialog.o queuemusicwidget.o eventor.o multimediatestwidget.o welcome_wizard.o database.o database_songinfo.o database_statement.o actionhandler_webserver_socket.o midisyntheser.o midistripper.o notification.o messageboxautoclose.o collectionentry.o collectionprovider.o collectionproviderfs.o collectionproviderhttp.o songqueueitem.o songqueueitemretriever.o mediaplayerinitializer.o qrc_resources.o moc_mainwindow.o moc_mediaplayer.o moc_songqueue.o moc_playerrenderer.o moc_karaokewidget.o moc_karaokesong.o moc_playerwidget.o moc_playerbutton.o moc_currentstate.o moc_actionhandler.o moc_actionhandler_lirc.o moc_actionhandler_webserver.o moc_songdatabasescanner.o moc_backgroundvideo.o moc_settingsdialog.o moc_colorbutton.o moc_labelshowhelp.o moc_musiccollectionmanager.o moc_queuekaraokewidget.o moc_queuekaraokewidget_addeditdialog.o moc_queuemusicwidget.o moc_eventor.o moc_multimediatestwidget.o moc_welcome_wizard.o moc_database.o moc_actionhandler_webserver_socket.o moc_notification.o moc_messageboxautoclose.o moc_collectionprovider.o moc_songqueueitemretriever.o moc_mediaplayerinitializer.o   -L/home/jeremy/Source/spivak/src/..//3rdparty/cld2 -L/home/jeremy/Source/spivak/src/..//3rdparty/libsonivox/src/ -L/home/jeremy/Source/spivak/src/..//3rdparty/uchardet/ -L/home/jeremy/Source/spivak/src/..//3rdparty/sqlite3 -L/home/jeremy/Source/spivak/src/..//libkaraokelyrics/ -lsqlite3 -luchardet -lcld2 -lsonivox -lkaraokelyrics -lzip -lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 /usr/lib64/libQt6Widgets.so /usr/lib64/libQt6Gui.so /usr/lib64/libQt6Network.so /usr/lib64/libQt6Core.so -lpthread -lGLX -lOpenGL   
+make[1]: Leaving directory '/home/jeremy/Source/spivak/src'
